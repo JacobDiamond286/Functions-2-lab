@@ -127,7 +127,5 @@ const purchases = [{"owner":"Barry","price":103},{"owner":"Bob","price":75},
 */
 
 // CODE HERE
-const bobsTotal = purchases.filter(order => order.owner === `Bob`).reduce((a, c) => {
-  return a + c.price
-}, 0)
+const bobsTotal = purchases.filter(order => order.owner === `Bob`).reduce((a, c) => a + c.price, 0)
 console.log(bobsTotal)
